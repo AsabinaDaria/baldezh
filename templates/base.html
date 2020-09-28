@@ -1,0 +1,43 @@
+{% extends "really_base.html" %}
+
+{% block content %}
+<p><h1>Тест на балдеж</h1></p>
+<form action="" method="post" enctype="multipart/form-data" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        <p>
+        {{ form.religion.label }}<br>
+        {{ form.religion(class="form-group") }}
+    </p>
+    <p>
+        {{ form.challenge1.label }}<br>
+        {{ form.challenge1(class="form-group") }}
+    </p>
+    <p>
+        {{ form.challenge2.label }}<br>
+        {{ form.challenge2(class="form-group") }}
+    </p>
+    <p>
+        {{ form.challenge3.label }}<br>
+        {{ form.challenge3(class="form-group") }}
+    </p>
+    <p>
+        {{ form.challenge4.label }}<br>
+        {{ form.challenge4(class="form-group") }}
+    </p>
+    <p>
+        {{ form.music.label }}<br>
+        {{ form.music(class="form-group") }}
+    </p>
+    <p>
+        {{ form.friends.label }}<br>
+        {{ form.friends(class="form-group") }}
+    </p>
+    <p>
+        {{ form.baldezh.label }}<br>
+        {{ form.baldezh(class="form-group") }}
+    </p>
+    </p>
+    {{ form.submit(type="submit", value="Узнать результат", class="btn btn-dark") }}
+</form>
+{% endblock %}
